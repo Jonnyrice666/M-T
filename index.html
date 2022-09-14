@@ -6,30 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./sass/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <span>
+            <span class="nav none">
                 <a href="/index.html">Personal</a>
                 <a href="/index.html">Business</a>
                 <a href="/index.html">Commercial</a>
                 <a href="/index.html">People's United</a>
             </span>
             <a href="/" class="logo">
-                <h1>M&T</h1>Bank
+                <img src="/white logo.png" alt="">
             </a>
         </nav>
         <a href="/nav.html">
-            <svg class="icon-hamburger-menu" role="img" aria-hidden="true">
-                <title>Navigation Menu</title>
-                <use xlink:href="#icon-hamburger-menu"></use>
-            </svg>
+            <span class="icon">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="white" clip-rule="white">
+                    <path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#fff" stroke="white" stroke-width="2.5"></path>
+                    <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"></path>
+                </svg>
+            </span>
         </a>
     </header>
     <main>
-        <section>
+        <section class="none">
             <h2>Here for you today & into the future.
             </h2>
             <p>People's United customers, you can count on us to be here for you as we take the final steps in
@@ -37,12 +40,12 @@
                 login instructions and FAQs.</p>
             <a href="/index.html">Visit the Welcome Center ></a>
         </section>
-        <section>
-            <h1>Log In</h1>
+        <section class="loginsection">
+            <h1 class="login">Log In</h1>
             <p>If you know how to log in to the system you need, select one of the options below.</p>
             <form>
-                <span>
-                    <a href="/">Personal Business</a>
+                <span class="link">
+                    <a href="/" class="active">Personal Business</a>
                     <a href="./commercial.html">Commercial Treasury Center</a>
                 </span>
                 <span class="formgroup">
@@ -58,11 +61,7 @@
                         <input type="checkbox" name="remember" id="remember" />
                         <label for="remember">Remember User ID</label>
                     </span>
-                    <span>
-                        <svg class="login-icon -icon-question-mark" alt="">
-                            <use xlink:href="#icon-question-mark"></use>
-                        </svg><a href="/">Help with User ID or Passcode</a>
-                    </span>
+                        <a href="/">Help with User ID or Passcode</a>
                 </div>
                 <button type="submit">Log In ></button>
             </form>
