@@ -61,8 +61,30 @@ header nav .logo {
   }
 }
 
+main {
+  display: flex;
+}
+main .greensection {
+  width: 50%;
+  background-image: url(../pub-login-modal-desktop-740x816-d.jpeg);
+  background-repeat: no-repeat;
+  color: white;
+}
+main .greensection a {
+  color: white;
+}
 main .loginsection {
   padding-top: 2em;
+}
+@media only screen and (min-width: 768px) {
+  main .loginsection {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 3em 3em;
+  }
 }
 main .loginsection p {
   line-height: 14px;
